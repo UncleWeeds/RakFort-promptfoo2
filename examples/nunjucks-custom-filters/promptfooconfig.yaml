@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+prompts:
+  - file://prompts.txt
+providers:
+  - openai:gpt-4o-mini
+nunjucksFilters:
+  allcaps: ./allcaps.js
+tests:
+  - vars:
+      language: French
+      body: Hello world
+  - vars:
+      language: French
+      body: I'm hungry

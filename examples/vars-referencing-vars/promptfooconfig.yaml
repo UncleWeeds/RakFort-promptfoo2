@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+prompts:
+  - 'Write a {{sentence}}'
+
+providers:
+  - openai:gpt-4o-mini
+
+tests:
+  - vars:
+      sentence: 'tweet about {{topic}}'
+      topic: 'bananas'
+  - vars:
+      sentence: 'tweet about fruits'
+      topic: 'fruits'
+  - vars:
+      sentence: 'tweet about weasels'
+      topic: 'weasels'

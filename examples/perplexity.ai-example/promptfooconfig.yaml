@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+prompts:
+  - 'What are the latest scientific discoveries about {{topic}}? Please include citations.'
+
+providers:
+  - id: openai:chat:gpt-4o-mini
+  - id: perplexity:sonar
+    config:
+      temperature: 0.2
+      search_domain_filter: ['nature.com', 'science.org', 'newscientist.com']
+      search_recency_filter: 'month'
+      return_related_questions: true
+
+tests:
+  - vars:
+      topic: dark matter
+  - vars:
+      topic: quantum computing

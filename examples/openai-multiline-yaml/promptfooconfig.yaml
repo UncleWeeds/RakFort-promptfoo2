@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+prompts:
+  - prompt.yaml
+providers:
+  - openai:chat:gpt-4o-mini
+
+tests:
+  - vars:
+      content: hey
+  - vars:
+      content: what can you help with?
+  - vars:
+      content: tell me about hawaii

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+prompts:
+  - file://prompt.json
+providers:
+  - openai:gpt-4o-mini
+
+# Set up the conversation history
+defaultTest:
+  vars:
+    system_message: file://system_message.txt
+    previous_messages:
+      - user: Who founded Facebook?
+      - assistant: Mark Zuckerberg
+      - user: What's his favorite food?
+      - assistant: Pizza
+
+# Test multiple follow-ups
+tests:
+  - vars:
+      question: Did he create any other companies?
+  - vars:
+      question: What is his role at Internet.org?
+  - vars:
+      question: Will he let me borrow $5?
