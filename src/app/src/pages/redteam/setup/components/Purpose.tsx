@@ -92,7 +92,7 @@ export default function Purpose({ onNext }: PurposeProps) {
     <div className="bg-[#22103B] text-white px-4 md:px-12 py-10 space-y-10">
       {/* Header and Load Example */}
       <div className="mb-4 flex items-center justify-between">
-      <h2 className="text-2xl font-bold text-gray-700 dark:text-gray-50">
+      <h2 className="text-2xl font-bold text-gray-50">
         Usage Details
       </h2>
 
@@ -364,13 +364,13 @@ const TestModeToggle: React.FC<TestModeToggleProps> = ({ testMode, onChange }) =
   const baseClass =
     'flex-1 px-5 py-4 text-center transition-all duration-200 focus:outline-none';
   const selectedClass =
-    'bg-purple-100 text-purple-900 dark:bg-[#7904DF] dark:text-white font-semibold shadow-inner';
+    ' bg-[#7904DF] text-white font-semibold shadow-inner';
   const unselectedClass =
-    'bg-white text-gray-700 dark:bg-[#3d2070] dark:text-gray-200 hover:bg-purple-50 dark:hover:bg-[#47258c]';
+    'bg-[#3d2070] text-gray-200 hover:bg-[#47258c]';
 
   return (
     <div className="max-w-3xl w-full mx-auto mb-6">
-      <div className="flex border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm">
+      <div className="flex border border-gray-700 rounded-lg overflow-hidden shadow-sm">
         {modes.map((mode, index) => {
           const selected = testMode === mode.value;
           return (
@@ -381,14 +381,14 @@ const TestModeToggle: React.FC<TestModeToggleProps> = ({ testMode, onChange }) =
                 selected ? selectedClass : unselectedClass
               } ${
                 index !== modes.length - 1
-                  ? 'border-r border-gray-300 dark:border-gray-700'
+                  ? 'border-r border-gray-700'
                   : ''
               }`}
               type="button"
               aria-pressed={selected}
             >
               <div className="text-sm font-medium">{mode.title}</div>
-              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+              <div className="text-xs text-gray-400 mt-1">
                 {mode.description}
               </div>
             </button>

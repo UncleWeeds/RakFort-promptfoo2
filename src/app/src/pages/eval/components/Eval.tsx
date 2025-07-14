@@ -192,7 +192,7 @@ export default function Eval({
 
   if (failed) {
     return (
-      <Box sx={{ height: '100%', width: '100%', bgcolor: (theme) => theme.palette.mode === 'dark' ? 'rgba(43, 20, 73, 0.10)' : theme.palette.grey[50], p: 3, minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '50vh' }}>
         <Paper elevation={2} sx={{ width: '100%', maxWidth: 600, p: 4, bgcolor: 'background.paper', color: 'text.primary', border: '2px solid', borderColor: (theme) => theme.palette.divider, boxShadow: (theme) => `0 2px 8px ${theme.palette.mode === 'dark' ? 'rgba(43, 20, 73, 0.15)' : 'rgba(0,0,0,0.08)'}` }}>
           <Typography variant="h5" color="error" align="center">404 Eval not found</Typography>
         </Paper>
@@ -206,7 +206,7 @@ export default function Eval({
 
   if (!loaded || !table) {
     return (
-      <Box sx={{ height: '100%', width: '100%', bgcolor: (theme) => theme.palette.mode === 'dark' ? 'rgba(43, 20, 73, 0.10)' : theme.palette.grey[50], p: 3, minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '50vh' }}>
         <Paper elevation={2} sx={{ width: '100%', maxWidth: 600, p: 4, bgcolor: 'background.paper', color: 'text.primary', border: '2px solid', borderColor: (theme) => theme.palette.divider, boxShadow: (theme) => `0 2px 8px ${theme.palette.mode === 'dark' ? 'rgba(43, 20, 73, 0.15)' : 'rgba(0,0,0,0.08)'}` }}>
           <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
             <CircularProgress size={22} sx={{ color: '#A259F7' }} />
@@ -218,7 +218,7 @@ export default function Eval({
   }
 
   return (
-    <Box sx={{ height: '100%', width: '100%', bgcolor: (theme) => theme.palette.mode === 'dark' ? 'rgba(43, 20, 73, 0.10)' : theme.palette.grey[50], p: 3, minHeight: '100vh' }}>
+    <Box sx={{ width: '100%', bgcolor: 'background.paper', color: 'text.primary' }}>
       <Paper elevation={2} sx={{ width: '100%', p: 3, bgcolor: 'background.paper', color: 'text.primary', border: '2px solid', borderColor: (theme) => theme.palette.divider, boxShadow: (theme) => `0 2px 8px ${theme.palette.mode === 'dark' ? 'rgba(43, 20, 73, 0.15)' : 'rgba(0,0,0,0.08)'}` }}>
         <ShiftKeyProvider>
           <ResultsView

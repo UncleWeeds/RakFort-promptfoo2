@@ -83,8 +83,16 @@ export const ColumnSelector: React.FC<ColumnSelectorProps> = ({
 
   return (
     <>
-      <Button onClick={handleOpen} startIcon={<ViewColumnIcon />} variant="text">
-        Columns ({selectedColumns.length})
+      <Button sx={{
+                  backgroundColor: '#2B1449',
+                  color: 'white',
+                  borderRadius: 2,
+                  border: '1px solid #A259F7',
+                  fontWeight: 600,
+                  boxShadow: 'none',
+                  '&:hover': { backgroundColor: '#3A2060', borderColor: '#A259F7' },
+                }} onClick={handleOpen} startIcon={<ViewColumnIcon />} variant="text">
+        <div className='text-white'>Columns ({selectedColumns.length})</div>
       </Button>
 
       <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
@@ -92,10 +100,10 @@ export const ColumnSelector: React.FC<ColumnSelectorProps> = ({
           <Stack direction="row" justifyContent="space-between" alignItems="center">
             <Typography variant="h6">Select Columns</Typography>
             <Stack direction="row" spacing={1}>
-              <Button size="small" onClick={handleSelectAll}>
+              <Button sx={{color:'white'}} size="small" onClick={handleSelectAll}>
                 Select All
               </Button>
-              <Button size="small" onClick={handleSelectNone}>
+              <Button sx={{color:'white'}} size="small" onClick={handleSelectNone}>
                 Clear
               </Button>
             </Stack>
@@ -144,7 +152,7 @@ export const ColumnSelector: React.FC<ColumnSelectorProps> = ({
           ))}
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
+          <Button sx={{color:'white'}} onClick={handleClose}>Close</Button>
         </DialogActions>
       </Dialog>
     </>

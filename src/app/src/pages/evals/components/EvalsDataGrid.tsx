@@ -181,6 +181,7 @@ export default function EvalsDataGrid({
           flex: 0.5,
           renderCell: (params: GridRenderCellParams<Eval>) => (
             <Link
+            sx={{color:'#fff'}}
               href={`/eval/${params.row.evalId}`}
               onClick={(e) => {
                 e.preventDefault();
@@ -333,6 +334,8 @@ export default function EvalsDataGrid({
           slotProps={{ toolbar: { showUtilityButtons: true } }}
           sx={{
             border: 'none',
+            height: '100%',
+            width: '100%',
             '& .MuiDataGrid-row': {
               cursor: 'pointer',
               transition: 'background-color 0.2s ease',

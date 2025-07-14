@@ -78,7 +78,6 @@ const EvaluateTestSuiteCreator: React.FC = () => {
   return (
     <Box sx={{ minHeight: '100vh', height: '100%', width: '100%', p: 3, bgcolor: '#22103B' }}>
       <Paper
-        elevation={0}
         sx={{
           minHeight: '100vh',
           height: '100%',

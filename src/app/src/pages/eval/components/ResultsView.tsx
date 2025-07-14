@@ -478,7 +478,7 @@ export default function ResultsView({
   );
 
   return (
-    <Box sx={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'column', bgcolor: '#22103B', color: 'white', minHeight: '100vh' }}>
+    <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', color: 'white' }}>
       <ResponsiveStack
         direction="row"
         mb={3}

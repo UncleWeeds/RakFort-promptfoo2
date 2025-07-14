@@ -22,7 +22,7 @@ const createAppTheme = () =>
       mode: 'dark',
       primary: {
         main: '#2B1449',
-        light: '#3d2070',
+        light: '#fff',
         dark: '#22103B',
         contrastText: '#ffffff',
       },
@@ -225,7 +225,7 @@ export default function PageShell() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="h-screen flex flex-col dark:bg-[#22103B] overflow-hidden">
+      <div className="h-screen flex flex-col bg-[#22103B] overflow-hidden">
         {/* Navbar */}
         <header className="fixed top-0 left-0 right-0 z-50">
           <Navigation />

@@ -497,7 +497,7 @@ const Dashboard: React.FC = () => {
           </ActionButton>
           <ActionButton 
             icon={<PlayArrowIcon />} 
-            color={theme.palette.primary.main}
+            color={theme.palette.grey[700]}
             onClick={() => navigate('/redteam/setup')}
           >
             Security Assessment
@@ -634,7 +634,7 @@ const Dashboard: React.FC = () => {
             </div>
             <Button 
               variant="outlined" 
-              className="text-white border-slate-700 hover:bg-slate-700"
+              className="!text-white !border-slate-700 hover:!bg-slate-700"
               onClick={() => navigate('/evals')}
             >
               View All
@@ -699,7 +699,7 @@ const Dashboard: React.FC = () => {
             </div>
             <Button 
               variant="outlined" 
-              className="text-white border-slate-700 hover:bg-slate-700"
+              className="!text-white !border-slate-700 hover:!bg-slate-700"
               onClick={() => navigate('/redteam/setup')}
             >
               View All
@@ -784,7 +784,7 @@ const Dashboard: React.FC = () => {
           <Button 
             variant="outlined" 
             size="small" 
-            className="text-blue-400 border-blue-500/30 hover:bg-blue-500/20"
+            className="!text-blue-400 !border-blue-500/30 hover:!bg-blue-500/20"
             onClick={() => navigate('/setup')}
           >
             Start Eval
@@ -804,7 +804,7 @@ const Dashboard: React.FC = () => {
           <Button 
             variant="outlined" 
             size="small" 
-            className="text-red-400 border-red-500/30 hover:bg-red-500/20"
+            className="!text-red-400 !border-red-500/30 hover:!bg-red-500/20"
             onClick={() => navigate('/redteam/setup')}
           >
             Start Assessment
@@ -824,7 +824,7 @@ const Dashboard: React.FC = () => {
           <Button 
             variant="outlined" 
             size="small" 
-            className="text-green-400 border-green-500/30 hover:bg-green-500/20"
+            className="!text-green-400 !border-green-500/30 hover:!bg-green-500/20"
             onClick={() => navigate('/evals')}
           >
             Browse Reports

@@ -77,6 +77,7 @@ const TableSettingsModal: React.FC<SettingsModalProps> = ({ open, onClose }) => 
           <SettingsIcon
             color="primary"
             sx={{
+              color:'white',
               fontSize: '1.75rem',
               opacity: 0.9,
             }}
@@ -103,6 +104,7 @@ const TableSettingsModal: React.FC<SettingsModalProps> = ({ open, onClose }) => 
 
       <DialogContent
         sx={{
+          
           p: 0,
           height: {
             xs: 'calc(100% - 125px)',
@@ -143,6 +145,7 @@ const TableSettingsModal: React.FC<SettingsModalProps> = ({ open, onClose }) => 
           aria-label="Reset settings to defaults"
           title="Reset all settings to their default values"
           sx={{
+            
             borderRadius: tokens.borderRadius.pill,
             px: tokens.spacing.padding.item,
             py: tokens.spacing.padding.compact - 0.25,
