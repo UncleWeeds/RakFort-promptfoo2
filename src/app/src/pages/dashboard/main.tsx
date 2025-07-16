@@ -450,7 +450,8 @@ const Dashboard: React.FC = () => {
           <Button 
             onClick={fetchDashboardData}
             variant="outlined" 
-            className="text-white border-slate-700 hover:bg-slate-700"
+            sx={{color:'white', border:'314518'}}
+            className="!text-white !border-slate-700 hover:!bg-slate-700"
           >
             Retry
           </Button>
