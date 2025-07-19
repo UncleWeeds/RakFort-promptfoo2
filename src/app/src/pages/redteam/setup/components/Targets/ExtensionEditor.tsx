@@ -126,9 +126,9 @@ export default function ExtensionEditor({
                 </Box>
               }
             >
-              <IconButton size="small">
+              <span style={{ display: 'inline-flex', alignItems: 'center', cursor: 'pointer' }}>
                 <HelpIcon fontSize="small" />
-              </IconButton>
+              </span>
             </Tooltip>
           </Box>
           <Typography variant="body2" sx={{ color: '#fff' }}>
